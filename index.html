@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1><!--nome del mese, ma dato che non è statico non scrivo nulla--></h1>
+    </header>
+    <main>
+      <section id="calendar"></section>
+
+      <section id="addMeeting">
+        <h2>Add Meeting</h2>
+        <div>
+          <h4>Meeting Day</h4>
+
+          <span id="newMeetingDay">Click on a Day</span>
+        </div>
+        <form>
+          <div>
+            <label for="newMeetingTime"><h4>Meeting Time</h4></label>
+            <input id="newMeetingTime" type="time" required />
+          </div>
+          <div>
+            <label for="newMeetingName"><h4>Meeting Name</h4></label>
+            <input
+              id="newMeetingName"
+              placeholder="Insert a name for the meeting"
+              required
+            />
+          </div>
+          <div>
+            <h4>Add</h4>
+          </div>
+        </form>
+      </section>
+      <section>
+        <h2>Appointments for the Day:</h2>
+        <ul></ul>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
